@@ -3,8 +3,6 @@ Chroma is color conversion library that implements perceptually linear color spa
 
 *Documentation is work in progress.*
 
-## Synopsis
-
 ## Motivation
 
 Often in design process, the intent and methodology of color production relies on the predictibility of luminosity. Human vision has evolved to prioritize processing of luminosity information of the projected retinal image. Shape and form are processed before chromacity and hue. Artists & designers benefit from being able to control luminosity in a linear color space. It is pivotal in generating a visual hierachy for a variety of reasons such as distraction, emphasis, phase, depth, abstract artistic intents, etc.
