@@ -20,7 +20,6 @@ Chroma is color conversion library that implements perceptually linear color spa
 ## Code Sample
 
 ```processing
-
 // Import Chroma library
 import com.chroma.*;
 
@@ -49,23 +48,23 @@ void draw() {
     fill(testColor.getRGB());
     rect(width/2, height/2, 100, 100);
 }
-
-
 ```
 
 ## API Reference
 
-```java
-
+```processing
 Chroma(50,50,200,ColorSpace.LCH);		// LCH Color space
-
 ```
 
+## Tests
 
+Chroma includes several tests & examples and they are can be loaded within the Processing IDE by clicking: `File > Examples > Library Examples > Chroma`
+
+Alternatively, you can find the example source code under `Processing/libraries/Chroma/examples`.
 
 ## Installation
 
-#### How to install library Chroma
+###### How to install library Chroma
 
 
 Install with the "Add Library..." tool
@@ -76,7 +75,7 @@ libraries have been converted to show up in this menu. If a library isn't there,
 it will need to be installed manually by following the instructions below.
 
 
-#### Manual Install
+###### Manual Install
 
 Contributed libraries may be downloaded separately and manually placed within
 the "libraries" folder of your Processing sketchbook. To find (and change) the
@@ -89,12 +88,13 @@ location. You will need to create the "libraries" folder if this is your first
 contributed library.
 
 By default the following locations are used for your sketchbook folder:
-For Mac users, the sketchbook folder is located inside ~/Documents/Processing.
+For Mac users, the sketchbook folder is located inside `~/Documents/Processing`.
 For Windows users, the sketchbook folder is located inside
-'My Documents'/Processing.
+`My Documents/Processing`.
 
 The folder structure for library Chroma should be as follows:
 
+```
 Processing
 	libraries
 		Chroma
@@ -103,7 +103,7 @@ Processing
 				    Chroma.jar
 			  reference
 			  src
-
+```
 
 Some folders like "examples" or "src" might be missing. After library
 Chroma has been successfully installed, restart the Processing
@@ -112,12 +112,6 @@ application.
 
 If you're having trouble, have a look at the Processing Wiki for more
 information: http://wiki.processing.org/w/How_to_Install_a_Contributed_Library
-
-## Tests
-
-Chroma includes several tests & examples and they are can be loaded within the Processing IDE by clicking: `File > Examples > Library Examples > Chroma`
-
-Alternatively, you can find the example source code under `Processing/libraries/Chroma/examples`.
 
 ## Contributors
 
