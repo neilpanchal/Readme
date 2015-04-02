@@ -20,33 +20,32 @@ Chroma is color conversion library that implements perceptually linear color spa
 ## Code Sample
 
 ```processing
-// Import Chroma library
-import com.chroma.*;
 
-int l = 50;
-int c = 50;
-int h = 200;
+import com.chroma.*; // Import Chroma library
 
-// Declare a chroma object
-Chroma testColor;
+int l = 50; // Luminosity, Range: 0-100
+int c = 50; // Chroma, Range: 0-128
+int h = 200; // Hue, Range: 0-360
+
+
+Chroma testColor; // Declare a chroma object
 
 void setup() {
 
-    size(1280, 720, "processing.core.PGraphicsRetina2D");
+    size(1280, 720);
     rectMode(CENTER);
     noStroke();
 
-    // Create a chroma object
-    testColor = new Chroma(l,c,h,ColorSpace.LCH);
+    testColor = new Chroma(l,c,h,ColorSpace.LCH); // Create a chroma object
 }
 
 void draw() {
 
     background(255);
 
-    // To fetch RGB color, use the getRGB method.
-    fill(testColor.getRGB());
-    rect(width/2, height/2, 100, 100);
+
+    fill(testColor.getRGB()); // To fetch RGB color, use the getRGB method.
+    rect(width/2, height/2, 100, 100); // Draw a cyan square
 }
 ```
 
@@ -58,7 +57,7 @@ Chroma(50,50,200,ColorSpace.LCH);		// LCH Color space
 
 ## Tests
 
-Chroma includes several tests & examples and they are can be loaded within the Processing IDE by clicking: `File > Examples > Library Examples > Chroma`
+Chroma includes several tests & examples and they are can be loaded within the Processing IDE by clicking: `File > Examples > Library Examples > Chroma`.
 
 Alternatively, you can find the example source code under `Processing/libraries/Chroma/examples`.
 
