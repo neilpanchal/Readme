@@ -1,15 +1,15 @@
 # Chroma
 Chroma is color conversion library that implements perceptually linear color spaces such as CIELab &amp; CIE-LCH.
 
-*Documentation is work in progress.*
+***Documentation is work in progress.***
 
 ## Motivation
 
 Often in design process, the intent and methodology of color production relies on the predictibility of luminosity. Human vision has evolved to prioritize processing of luminosity information of the projected retinal image. Shape and form are processed before chromacity and hue. Artists & designers benefit from being able to control luminosity in a linear color space. It is pivotal in generating a visual hierachy for a variety of reasons such as distraction, emphasis, phase, depth, abstract artistic intents, etc.
 
-Color spaces such as HSL, HSV/HSB and RGB are optimized for digital displays and lack luminosity control. For example, varying Hue while keeping Saturation and Lightness constant in HSL colorspace produces perceptually non-uniform colors. Moreover, Lightness is a non-linear function of both - Saturation and Hue. This severely limits the ability to predict the apparent and perceptual luminosity.
+Color spaces such as **HSL**, **HSV/HSB** and **RGB** are optimized for digital displays and lack luminosity control. For example, varying Hue while keeping Saturation and Lightness constant in HSL colorspace produces perceptually non-uniform colors. Moreover, Lightness is a non-linear function of both - Saturation and Hue. This severely limits the ability to predict the apparent and perceptual luminosity.
 
-Chroma library allows for color production in CIE-Lab and CIE-LCH (cyclindrical transfomration of CIE-Lab) which are better suited for human vision and perceptual predictibility. Chroma objects can be instantiated with CIE color parameters, but represented and drawn in RGB color space.
+Chroma library allows for color production in **CIE-Lab** and **CIE-LCH** (cyclindrical transfomration of CIE-Lab) which are better suited for human vision and perceptual predictibility. Chroma objects can be instantiated with CIE color parameters, but represented and drawn in RGB color space.
 
 
 Chroma is color conversion library that implements perceptually linear color spaces such as CIELab & CIE-LCH.
