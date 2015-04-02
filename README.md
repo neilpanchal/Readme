@@ -115,10 +115,9 @@ information: http://wiki.processing.org/w/How_to_Install_a_Contributed_Library
 
 ## Tests
 
-Chroma includes several tests & examples and they are can be loaded within the Processing IDE by clicking: ```
-File > Examples > Library Examples > Chroma
-```
-Alternatively, you can find the example source code under Processing/libraries/Chroma/examples.
+Chroma includes several tests & examples and they are can be loaded within the Processing IDE by clicking: `File > Examples > Library Examples > Chroma`
+
+Alternatively, you can find the example source code under `Processing/libraries/Chroma/examples`.
 
 ## Contributors
 
