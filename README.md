@@ -16,7 +16,50 @@ Chroma library allows for color production in CIE-Lab and CIE-LCH (cyclindrical 
 
 Chroma is color conversion library that implements perceptually linear color spaces such as CIELab & CIE-LCH.
 
-## Code Example
+
+## Code Sample
+
+```processing
+
+// Import Chroma library
+import com.chroma.*;
+
+int l = 50;
+int c = 50;
+int h = 200;
+
+// Declare a chroma object
+Chroma testColor;
+
+void setup() {
+
+    size(1280, 720, "processing.core.PGraphicsRetina2D");
+    rectMode(CENTER);
+    noStroke();
+
+    // Create a chroma object
+    testColor = new Chroma(l,c,h,ColorSpace.LCH);
+}
+
+void draw() {
+
+    background(255);
+
+    // To fetch RGB color, use the getRGB method.
+    fill(testColor.getRGB());
+    rect(width/2, height/2, 100, 100);
+}
+
+
+```
+
+## API Reference
+
+```java
+
+Chroma(50,50,200,ColorSpace.LCH);		// LCH Color space
+
+```
 
 
 
@@ -70,19 +113,36 @@ application.
 If you're having trouble, have a look at the Processing Wiki for more
 information: http://wiki.processing.org/w/How_to_Install_a_Contributed_Library
 
-
-## API Reference
-
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
 ## Tests
 
-Describe and show how to run the tests with code examples.
+Chroma includes several tests & examples and they are can be loaded within the Processing IDE by clickgin File > Examples > Library Examples > Chroma. Alternatively, you can find the example source code under Processing/libraries/Chroma/examples.
 
 ## Contributors
 
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
+Neil Panchal / http://neil.engineer
 
 ## License
 
-A short snippet describing the license (MIT, Apache, etc.)
+The MIT License (MIT)
+
+Copyright (c) 2015 Neil Panchal
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
